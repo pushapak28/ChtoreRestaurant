@@ -1,0 +1,162 @@
+.row-header {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 350px;
+}
+
+.footer {
+    background-color: aliceblue;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background-color: #8EC92F;
+    color: rgb(240, 240, 240);
+}
+
+.address {
+    /* font-size: 80%; */
+    margin: 0px auto;
+    color: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+.navbar-light {
+    background-color: #fcc626f1;
+
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* rating  */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center
+}
+
+.rating input {
+    display: none
+}
+
+.rating label {
+    position: relative;
+    width: 1em;
+    font-size: 6vw;
+    color: #FFD600;
+    cursor: pointer
+}
+
+.rating label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+/*  fact and figure text style  */
+#grad1,
+#header-text {
+
+    background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+/* close rating  */
+
+.stat {
+    margin: 15px 0px 10px 0px;
+    padding: 80px 0px 80px 0px;
+
+}
+
+.stat p {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.stat i {
+    font-size: 75px;
+}
+
+.stat-items h2 {
+    padding-top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: darkorange;
+}
+
+/* about us quote */
+#author {
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+.twitter-button:hover {
+    color: #6dc0ff;
+}
+
+.twittr i {
+    font-size: 30px;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Carousel */
+.carousel {
+    background: wheat;
+}
+
+.carousel-item {
+    height: 600px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+}
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: opx;
+    z-index: 1;
+}
